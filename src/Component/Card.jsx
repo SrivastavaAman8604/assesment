@@ -21,10 +21,10 @@ const Card = () => {
         <div className="card" key={currency} style={{ width: '18rem', margin: '10px' }}>
             <div className="card-body">
                 <h5 className="card-title">{currency}</h5>
-                <p className="card-text">
-                    Price: {prices[currency].rate}</p>
-                    <p className="card-text" dangerouslySetInnerHTML={{__html: prices[currency].symbol}}></p>
-
+                <p className="card-text d-flex">
+                    Price: {prices[currency].rate}
+                    <span className="card-text" dangerouslySetInnerHTML={{__html: prices[currency].symbol}}></span>
+                </p>
                     <p className="card-text">
                     Currency: {prices[currency].description}</p>
                     <p className="card-text">
